@@ -1,9 +1,17 @@
 <html>
     <head>
         <title>{{title}}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/semantic.css')}}"></script>
     </head>
     <body>
-     {%block content %}
-     {%endblock%}
+    <div class="ui text demo menu">
+        <a class="active item">
+            <a href="/index">Index</a>
+        </a>
+        <a class="item">
+            <a href="/login">Login</a>
+        </a>
+    </div>
+    {%block content %}{%endblock%}
     </body>
 </html>

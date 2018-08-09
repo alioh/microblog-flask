@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-
 {% block content %}
-    <h1>Hello, {{user.username}}!</h1>
-    <hr>
-    <h3>All posts:</h1>
+    Hello,  {{user.username}}!
+
+    <h2>All posts</h2>
     {% for i in posts %}
-    user: {{i.author.username}}<br>
-    post: {{i.post}}<br><br>
+        <p>{{i.author.username}} <br>{{i.post}}</p>
     {% endfor %}
+
 {% endblock %}
+
